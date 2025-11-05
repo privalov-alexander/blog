@@ -1,0 +1,21 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AtomNavigate > Корректная отрисовка с использованием реквизитов по умолчанию 1`] = `
+<button
+  class="button-primary relative inline-flex items-center justify-center space-x-2.5 transition"
+  data-v-83f08e36=""
+  type="button"
+>
+  <!--v-if-->
+  <span
+    class=""
+    data-v-83f08e36=""
+  >
+    
+    Default slot
+    
+  </span>
+  <!--v-if-->
+  <!--v-if-->
+</button>
+`;

@@ -1,0 +1,38 @@
+{
+    "name": "nuxt-app",
+    "private": true,
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare",
+        "lint:js": "eslint .",
+        "lint:prettier": "prettier --check .",
+        "lint": "npm run lint:js && yarn lint:prettier",
+        "lintfix": "npm run format && yarn lint:js --fix",
+        "format": "prettier --write --list-different ."
+    },
+    "devDependencies": {
+        "@headlessui/vue": "^1.7.23",
+        "@nuxt/eslint-config": "^0.6.1",
+        "@pinia/nuxt": "^0.7.0",
+        "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+        "@typescript-eslint/parser": "^8.7.0",
+        "@vue/test-utils": "^2.4.5",
+        "autoprefixer": "^10.4.20",
+        "eslint": "^9.11.1",
+        "jsdom": "^25.0.1",
+        "nuxt": "^3.14.159",
+        "pinia": "^2.2.2",
+        "postcss": "^8.4.47",
+        "prettier": "^3.3.3",
+        "prettier-plugin-organize-attributes": "^1.0.0",
+        "prettier-plugin-tailwindcss": "^0.6.6",
+        "tailwindcss": "^3.4.14",
+        "typescript": "^5.6.2",
+        "vitest": "^2.1.1",
+        "vue": "^3.5.8",
+        "vue-router": "^4.4.5"
+    }
+}
