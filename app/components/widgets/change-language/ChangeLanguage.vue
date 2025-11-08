@@ -2,6 +2,7 @@
     <div class="change-language">
         <button
             type="button"
+            :aria-label="`language ${selectedLanguage}`"
             class="language-button"
             @click="toggleMenu">
             <AtomIcon
@@ -16,6 +17,11 @@
                 v-for="language in LANGUAGES"
                 :key="language"
                 type="button"
+                :aria-label="
+                    selectedLanguage === language
+                        ? `language ${selectedLanguage} already selected`
+                        : `select ${selectedLanguage} language`
+                "
                 :class="{ selected: selectedLanguage === language }"
                 class="language-button">
                 <AtomIcon

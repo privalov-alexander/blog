@@ -115,6 +115,15 @@ const BREADCRUMBS: BreadcrumbItem[] = [
         url: '/privacy/',
     },
 ]
+
+useSeoMeta({
+    title: 'Privacy Policy | QTIM',
+    description:
+        'Read QTIM’s Privacy Policy to learn how we collect, use, and protect your data while providing our services.',
+    ogTitle: 'Privacy Policy | QTIM',
+    ogDescription:
+        'Read QTIM’s Privacy Policy to learn how we collect, use, and protect your data while providing our services.',
+})
 </script>
 
 <style scoped>

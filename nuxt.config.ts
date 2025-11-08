@@ -23,14 +23,6 @@ export default defineNuxtConfig({
                     content: 'width=device-width, initial-scale=1',
                 },
                 {
-                    name: 'msapplication-TileColor',
-                    content: '#f31a34',
-                },
-                {
-                    name: 'theme-color',
-                    content: '#ffffff',
-                },
-                {
                     property: 'og:site_name',
                     content: 'www.qtim.pro',
                 },

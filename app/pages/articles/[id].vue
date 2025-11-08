@@ -65,6 +65,20 @@ const BREADCRUMBS: BreadcrumbItem[] = [
         url: '/articles/' + route.params.id,
     },
 ]
+
+useSeoMeta({
+    title: article.value?.title,
+    description: article.value?.preview,
+    ogTitle: article.value?.title,
+    ogDescription: article.value?.preview,
+    ogImage: {
+        url: 'https://placehold.co/280x280',
+        type: 'image/png',
+        width: 280,
+        height: 280,
+        alt: article.value?.title,
+    },
+})
 </script>
 
 <style scoped>

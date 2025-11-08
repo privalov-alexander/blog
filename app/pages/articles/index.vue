@@ -9,7 +9,7 @@
                 <BaseCard
                     v-for="article in articlesByPage"
                     :key="article.id"
-                    :to="`/articles/${article.id}`"
+                    :to="`/articles/${article.id}/`"
                     :title="article.title"
                     :image="article.image" />
             </div>
@@ -88,6 +88,15 @@ const articlesByPage = computed<IArticle[]>(() => {
             ...article,
             image: 'https://placehold.co/280x280',
         }))
+})
+
+useSeoMeta({
+    title: 'Articles & Insights | QTIM',
+    description:
+        'Read the latest articles, expert tips, and industry insights from Qtim to stay ahead in digital innovation',
+    ogTitle: 'Articles & Insights | QTIM',
+    ogDescription:
+        'Read the latest articles, expert tips, and industry insights from Qtim to stay ahead in digital innovation',
 })
 </script>
 

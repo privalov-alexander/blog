@@ -20,6 +20,15 @@ import BaseLink from '~/components/base/base-link/BaseLink.vue'
 
 const isAnimated = shallowRef<boolean>(false)
 
+useSeoMeta({
+    title: 'Coming Soon',
+    description:
+        'This page is under construction. Stay tuned for new updates, innovative projects, and digital solutions from',
+    ogTitle: 'Coming Soon',
+    ogDescription:
+        'This page is under construction. Stay tuned for new updates, innovative projects, and digital solutions from',
+})
+
 onMounted(() => {
     setTimeout(() => {
         isAnimated.value = true

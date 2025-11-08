@@ -49,6 +49,15 @@ const sections = [
         imageWebp: '/assets/images/main-section/articles.webp',
     },
 ]
+
+useSeoMeta({
+    title: 'QTIM | Innovative Digital Solutions for Your Business',
+    description:
+        'Discover QTIM’s cutting-edge digital services and creative solutions that help businesses grow and succeed in the digital era.',
+    ogTitle: 'QTIM | Innovative Digital Solutions for Your Business',
+    ogDescription:
+        'Discover QTIM’s cutting-edge digital services and creative solutions that help businesses grow and succeed in the digital era.',
+})
 </script>
 
 <style scoped>
