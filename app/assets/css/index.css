@@ -1,0 +1,72 @@
+@import 'base/transitions.css';
+@import 'base/colors.css';
+@import 'base/text.css';
+@import 'base/fonts.css';
+@import 'base/preflight.css';
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (min-width: 30rem) {
+    .container {
+        max-width: 30rem;
+    }
+}
+
+@media (min-width: 46.5rem) {
+    .container {
+        max-width: 46.5rem;
+    }
+}
+
+@media (min-width: 64rem) {
+    .container {
+        max-width: 64rem;
+    }
+}
+
+@media (min-width: 86rem) {
+    .container {
+        max-width: 86rem;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 2400px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    html {
+        font-size: 22px;
+    }
+}
+
+@media screen and (pointer: fine) {
+    *::-webkit-scrollbar {
+        height: 6px;
+        width: 6px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: var(--color-bw-100);
+        border-radius: 6px;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        border-radius: 6px;
+        background-color: var(--color-bw-400);
+    }
+}

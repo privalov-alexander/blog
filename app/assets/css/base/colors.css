@@ -1,0 +1,11 @@
+:root {
+    --color-bw-100: #F3F3F3;
+    --color-bw-200: #868686;
+    --color-bw-300: #232323;
+    --color-bw-400: #101010;
+
+    --color-accent-green: #9EFFBF;
+    --color-accent-purple-dark: #7941A7;
+    --color-accent-purple-light: #E2BEFF;
+    --color-accent-blue: #1059C8;
+}

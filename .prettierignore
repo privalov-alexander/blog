@@ -1,9 +1,7 @@
-node_modules
-*.log*
-.nuxt
-.nitro
-.cache
-.output
-.env
-dist
 public
+node_modules
+.nuxt
+.output
+.git
+.idea
+pnpm-lock.yaml

@@ -7,16 +7,20 @@ export default defineNuxtConfig({
             client_secret: process.env.CLIENT_SECRET,
         },
     },
+    router: {
+        options: {
+            scrollBehaviorType: 'smooth',
+        },
+    },
     app: {
         head: {
             htmlAttrs: {
-                lang: 'ru',
+                lang: 'en',
             },
             meta: [
                 {
                     name: 'viewport',
-                    content:
-                        'width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no',
+                    content: 'width=device-width, initial-scale=1',
                 },
                 {
                     name: 'msapplication-TileColor',
@@ -26,46 +30,51 @@ export default defineNuxtConfig({
                     name: 'theme-color',
                     content: '#ffffff',
                 },
+                {
+                    property: 'og:site_name',
+                    content: 'www.qtim.pro',
+                },
             ],
             link: [
                 {
+                    rel: 'icon',
+                    type: 'image/png',
+                    sizes: '96x96',
+                    href: '/favicon/favicon-96x96.png',
+                },
+                {
+                    rel: 'icon',
+                    type: 'image/svg+xml',
+                    href: '/favicon/favicon.svg',
+                },
+                {
+                    rel: 'shortcut icon',
+                    href: '/favicon/favicon.ico',
+                },
+                {
                     rel: 'apple-touch-icon',
                     sizes: '180x180',
-                    type: 'image/x-icon',
-                    href: '/favicons/apple-touch-icon.png',
-                },
-                {
-                    rel: 'icon',
-                    sizes: '32x32',
-                    type: 'image/png',
-                    href: '/favicons/favicon-32x32.png',
-                },
-                {
-                    rel: 'icon',
-                    sizes: '16x16',
-                    type: 'image/png',
-                    href: '/favicons/favicon-16x16.png',
+                    href: '/favicon/apple-touch-icon.png',
                 },
                 {
                     rel: 'manifest',
-                    href: '/favicons/site.webmanifest',
-                },
-                {
-                    rel: 'mask-icon',
-                    color: '#f31a34',
-                    href: '/favicons/safari-pinned-tab.svg',
+                    href: '/favicon/site.webmanifest',
                 },
             ],
         },
     },
-
-    devtools: { enabled: true },
-    css: ['~/assets/css/tailwind.css'],
+    srcDir: 'app',
+    compatibilityDate: '2025-11-05',
+    devtools: { enabled: false },
+    css: [
+        '@/assets/css/index.css',
+        '@/assets/css/layout.css',
+        '@/assets/fonts/jost/stylesheet.css',
+    ],
     postcss: {
         plugins: {
-            tailwindcss: {},
             autoprefixer: {},
         },
     },
-    modules: ['@pinia/nuxt'],
+    modules: ['@pinia/nuxt', '@nuxt/eslint'],
 })
