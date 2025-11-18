@@ -13,10 +13,6 @@ experience.
 ### Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/blog.git
-cd blog
-
 # Install dependencies
 npm install
 # or
@@ -31,8 +27,6 @@ npm run dev
 # or
 pnpm dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ### Build for Production
 
